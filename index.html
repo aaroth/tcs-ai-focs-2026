@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#163e35">
+<title>AI and TCS Workshop · FOCS 2026 · November 8</title>
+<meta name="description" content="A keynote by Daniel Litt and a panel on the future of theoretical research and AI. November 8, 2026, 3:30–5:30 p.m. Eastern, NYU Kimmel Center, New York City.">
+<meta property="og:title" content="AI and TCS Workshop · FOCS 2026">
+<meta property="og:description" content="November 8, 2026 · 3:30–5:30 p.m. Eastern · Eisner &amp; Lubin Auditorium, NYU Kimmel Center. Daniel Litt keynote followed by a five-speaker panel.">
+<meta property="og:type" content="website">
+<style>
+:root{--paper:#f8f6ef;--ink:#183c33;--body:#263e35;--muted:#52645a;--line:#c9cfc3;--accent:#d5e681;--panel:#edf0e5;--white:#fffef9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1.5rem}
+body{margin:0;background:var(--paper);color:var(--body);font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:var(--ink)}
+a{color:inherit;text-underline-offset:.23em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid #8a4b00;outline-offset:5px;border-radius:2px}
+.skip{position:absolute;left:1rem;top:-6rem;background:var(--ink);color:white;padding:.7rem 1rem;z-index:10}
+.skip:focus{top:1rem}
+.wrap{width:min(1160px,calc(100% - 96px));margin-inline:auto}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:2rem;min-height:100px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:.8rem;text-decoration:none;font-weight:700;letter-spacing:.02em;font-size:15px}
+.brand-mark{display:grid;place-items:center;width:32px;height:32px;background:var(--ink);color:var(--paper);font-family:Georgia,serif;font-size:24px;line-height:1}
+.brand span:last-child{font-weight:400;color:var(--muted)}
+nav{display:flex;align-items:center;gap:1.8rem;font-size:14px}
+nav a{text-decoration:none;padding:.7rem 0}
+nav .registration{border-bottom:1px solid var(--ink)}
+.external-icon{display:inline-block;width:11px;height:11px;margin-left:.2em;vertical-align:baseline}
+.eyebrow{font:600 12px/1.5 Arial,Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0}
+.hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(290px,1fr);gap:72px;padding:72px 0 58px;align-items:start}
+.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(68px,7.9vw,102px);font-weight:400;letter-spacing:-.055em;line-height:1.05;margin:18px 0 20px;color:var(--ink)}
+.hero h1 .plus{font-style:italic;font-weight:400;color:#6b7b3d;margin:0 .015em}
+.official-title{display:block;font:500 clamp(18px,2vw,22px)/1.4 Arial,Helvetica,sans-serif;letter-spacing:0;margin-top:16px}
+.intro{max-width:520px;font-family:Georgia,'Times New Roman',serif;font-size:28px;line-height:1.4;margin:0 0 27px;letter-spacing:-.015em}
+.hero-summary{max-width:490px;font-size:16px;color:var(--muted);margin:0 0 30px}
+.hero-link{display:inline-flex;align-items:center;gap:2rem;padding:12px 18px;border:1px solid var(--ink);font-size:14px;font-weight:600;text-decoration:none}
+.hero-link:hover{background:var(--ink);color:var(--paper)}
+.event-details{background:var(--ink);color:var(--paper);padding:29px 30px 28px;position:relative}
+.event-details .eyebrow{color:#c9d2ba}
+.event-details dl{margin:24px 0 0}
+.event-details dt{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#c9d2ba;margin:21px 0 4px}
+.event-details dd{margin:0;font-size:20px;line-height:1.4}
+.event-details dd small{display:block;font-size:14px;color:#dce4d4;margin-top:4px}
+.event-details .day{font-size:27px;letter-spacing:-.035em}
+.event-details .venue-name{font-size:19px}
+.event-details .venue-link{display:inline-block;margin-top:23px;font-size:13px;color:var(--accent)}
+.diagram{height:71px;width:100%;margin-top:6px;display:block}
+.section{padding:48px 0 56px;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:2rem;margin-bottom:29px}
+.section-title{font-family:Georgia,'Times New Roman',serif;font-size:35px;line-height:1.2;font-weight:400;letter-spacing:-.03em;margin:0;color:var(--ink)}
+.section-title .number{font:12px Arial,Helvetica,sans-serif;vertical-align:middle;letter-spacing:0;color:var(--muted);margin-right:21px}
+.note{font-size:13px;color:var(--muted);margin:0}
+.schedule{list-style:none;margin:0;padding:0}
+.session{display:grid;grid-template-columns:230px minmax(0,1fr);gap:42px;border-top:1px solid var(--line);padding:30px 0}
+.session:last-child{padding-bottom:0}
+.session-time{font-family:Georgia,'Times New Roman',serif;font-size:27px;color:var(--ink);line-height:1.3}
+.session-time span{display:block;font:12px/1.5 Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:7px}
+.session-label{display:flex;align-items:center;gap:13px;margin-bottom:11px}
+.session h3{font-size:22px;font-weight:500;line-height:1.2;margin:0;letter-spacing:-.02em;color:var(--ink)}
+.duration{font-size:11px;letter-spacing:.06em;text-transform:uppercase;border:1px solid #b9c4ad;padding:3px 8px;white-space:nowrap;color:var(--muted)}
+.session p{margin:0;font-size:16px;max-width:650px}
+.session .session-desc{font-size:14px;color:var(--muted);margin-top:7px}
+.speaker-list{margin:0;padding:0;list-style:none}
+.speaker{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:25px;align-items:center;padding:23px 0;border-top:1px solid var(--line)}
+.speaker:first-child{background:var(--panel);padding:25px 22px;margin:0 -22px;border-top:0}
+.speaker h3{font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:400;line-height:1.2;letter-spacing:-.02em;margin:0}
+.speaker h3 a{text-decoration:none}
+.speaker h3 a:hover{text-decoration:underline}
+.role{display:block;color:var(--muted);font-size:10px;line-height:1.5;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.affiliation{font-size:15px;margin:0}
+.website{font-size:13px;padding:10px 0;white-space:nowrap}
+.venue-section{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.venue-section .section-title{margin-bottom:27px}
+.venue-section h3{font-size:20px;line-height:1.4;font-weight:500;margin:0 0 9px}
+.venue-section p{font-size:15px;max-width:420px;margin:0 0 18px;color:var(--muted)}
+.venue-section address{font-style:normal;font-size:16px;line-height:1.8;margin-bottom:20px}
+.venue-section .plain-link{font-size:14px}
+.organizers{border-left:1px solid var(--line);padding-left:45px}
+.organizers h3{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:24px;margin:22px 0 3px}
+.organizers h3:first-of-type{margin-top:0}
+.organizers p{font-size:14px}
+footer{background:var(--ink);color:var(--paper);padding:27px 0}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;font-size:12px}
+footer a{color:#e4ebda}
+.footer-brand{font-family:Georgia,'Times New Roman',serif;font-size:22px;letter-spacing:-.03em}
+.footer-links{display:flex;flex-wrap:wrap;gap:1.4rem}
+@media(max-width:900px){.wrap{width:calc(100% - 56px)}.hero{gap:36px;grid-template-columns:1.2fr 1fr;padding-top:48px}.hero h1{font-size:76px}.intro{font-size:24px}.event-details{padding:25px}.speaker{grid-template-columns:1.1fr 1fr auto;gap:16px}.session{grid-template-columns:190px 1fr;gap:30px}.venue-section{gap:35px}.organizers{padding-left:30px}}
+@media(max-width:680px){body{font-size:16px}.wrap{width:calc(100% - 40px)}.topbar{min-height:84px;flex-wrap:wrap;gap:10px;padding:20px 0 15px}.brand{font-size:13px}.brand-mark{width:27px;height:27px;font-size:21px}nav{width:100%;justify-content:space-between;gap:14px;font-size:12px}nav a{padding:5px 0}.hero{grid-template-columns:1fr;gap:31px;padding:38px 0 38px}.hero h1{font-size:clamp(64px,15vw,90px);margin-top:12px}.intro{font-size:26px;max-width:460px}.hero-summary{font-size:15px;margin-bottom:22px}.event-details{padding:25px}.event-details dl{display:grid;grid-template-columns:1fr;gap:0}.event-details .day{font-size:26px}.diagram{display:none}.section{padding:34px 0 39px}.section-head{display:block;margin-bottom:24px}.section-title{font-size:31px}.section-title .number{margin-right:13px}.section-head .note{margin-top:9px}.session{grid-template-columns:1fr;gap:18px;padding:25px 0}.session-time{font-size:25px}.session-time span{display:inline;margin-left:9px;font-size:10px}.session-label{flex-wrap:wrap}.session h3{font-size:21px}.speaker{grid-template-columns:1fr auto;gap:5px 12px;padding:22px 0}.speaker:first-child{padding:23px 14px;margin:0 -14px}.speaker h3{font-size:25px}.affiliation{grid-column:1;grid-row:2;font-size:14px}.website{grid-column:2;grid-row:1 / 3;font-size:12px}.venue-section{grid-template-columns:1fr;gap:33px}.organizers{border-left:0;border-top:1px solid var(--line);padding:32px 0 0}.venue-section .section-title{margin-bottom:20px}.footer-inner{align-items:flex-start;flex-direction:column;gap:15px}.footer-links{gap:1.2rem}}
+@media(max-width:680px){.hero{gap:20px}.hero>div{display:contents}.hero>div>.eyebrow{order:0}.hero h1{order:1;margin:0}.hero .intro{order:2;margin:0;font-size:23px}.hero .event-details{order:3;margin-top:6px}.hero .hero-summary{order:4;margin:0}.hero .hero-link{order:5;justify-self:start}.hero .official-title{margin-top:10px}.hero nav{gap:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{body{background:white;font-size:11pt}.wrap{width:100%}.topbar,nav,.hero-link,.diagram,.website,footer{display:none}.hero{padding-top:0;gap:30px;grid-template-columns:1.2fr 1fr}.hero h1{font-size:54px}.intro{font-size:20px}.hero-summary{font-size:12px}.event-details{background:white;color:#000;border:1px solid #aaa;padding:15px}.event-details .eyebrow,.event-details dt,.event-details dd small,.event-details .venue-link{color:#333}.event-details dd{font-size:16px}.section{padding:24px 0}.section-title{font-size:26px}.section-head{margin-bottom:18px}.session{padding:18px 0;gap:20px}.speaker{padding:13px 0;break-inside:avoid}.speaker h3{font-size:20px}.role{font-size:8px}.speaker:first-child{background:none}.affiliation{font-size:11px}.venue-section{gap:25px}.organizers{padding-left:24px}.session,.venue-section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap topbar">
+<a class="brand" href="https://focs.computer.org/2026/" aria-label="FOCS 2026 conference website"><span class="brand-mark" aria-hidden="true">f</span>FOCS 2026 <span>/ New York City</span></a>
+<nav aria-label="Main navigation"><a href="#schedule">Schedule</a><a href="#speakers">Speakers</a><a href="#venue">Venue</a><a class="registration" href="https://focs.computer.org/2026/registration-2/">FOCS registration <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></nav>
+</header>
+<main id="main" class="wrap" tabindex="-1">
+<section class="hero" aria-labelledby="workshop-title">
+<div>
+<p class="eyebrow">A joint workshop at FOCS 2026</p>
+<h1 id="workshop-title">TCS <span class="plus">+</span> AI<span class="official-title">AI and TCS Workshop</span></h1>
+<p class="intro">The future of theoretical research in the age of AI.</p>
+<p class="hero-summary">A keynote and a panel bringing together perspectives from theoretical computer science and mathematics. A joint session for all FOCS attendees.</p>
+<a class="hero-link" href="#schedule">Explore the program <span aria-hidden="true">↓</span></a>
+</div>
+<aside class="event-details" aria-label="Date, time and location">
+<p class="eyebrow">Plan your afternoon</p>
+<dl>
+<dt>Date</dt><dd class="day"><time datetime="2026-11-08">Sunday, November 8, 2026</time></dd>
+<dt>Time</dt><dd><time datetime="2026-11-08T15:30:00-05:00">3:30</time>–<time datetime="2026-11-08T17:30:00-05:00">5:30 p.m.</time><small>Eastern Standard Time · New York (UTC−5)</small></dd>
+<dt>Location</dt><dd class="venue-name">Eisner &amp; Lubin Auditorium<small>4th floor · NYU Kimmel Center<br>60 Washington Square South<br>New York, NY</small></dd>
+</dl>
+<a class="venue-link" href="#venue">Venue &amp; directions <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+<svg class="diagram" viewBox="0 0 320 68" fill="none" aria-hidden="true">
+<g stroke="#8da587" stroke-width="1"><path d="M4 51L64 18L124 50L184 16L244 47L311 16M4 51H124L244 47M64 18H184L311 16M64 18L124 50L184 16L244 47"/><path d="M4 51L184 16M124 50L311 16" opacity=".45"/></g>
+<g fill="#d5e681"><circle cx="4" cy="51" r="3"/><circle cx="64" cy="18" r="4"/><circle cx="124" cy="50" r="4"/><circle cx="184" cy="16" r="4"/><circle cx="244" cy="47" r="4"/><circle cx="311" cy="16" r="3"/></g>
+</svg>
+</aside>
+</section>
+
+<section id="schedule" class="section" aria-labelledby="schedule-title">
+<div class="section-head"><h2 class="section-title" id="schedule-title"><span class="number" aria-hidden="true">01</span>The program</h2><p class="note">Sunday, November 8 · All times Eastern (EST)</p></div>
+<ol class="schedule">
+<li class="session">
+<div class="session-time"><time datetime="2026-11-08T15:30:00-05:00">3:30</time>–<time datetime="2026-11-08T16:30:00-05:00">4:30 p.m.</time><span>Keynote</span></div>
+<div><div class="session-label"><h3>Keynote with Daniel Litt</h3><span class="duration">1 hour</span></div><p><a href="https://www.daniellitt.com/">Daniel Litt</a> · University of Toronto</p><p class="session-desc">A one-hour keynote session, including questions.</p></div>
+</li>
+<li class="session">
+<div class="session-time"><time datetime="2026-11-08T16:30:00-05:00">4:30</time>–<time datetime="2026-11-08T17:30:00-05:00">5:30 p.m.</time><span>Panel discussion</span></div>
+<div><div class="session-label"><h3>Panel: the future of TCS and AI</h3><span class="duration">1 hour</span></div><p><a href="#daniel-litt">Daniel Litt</a>, <a href="#nikhil-srivastava">Nikhil Srivastava</a>, <a href="#barna-saha">Barna Saha</a>, <a href="#dan-spielman">Dan Spielman</a>, and <a href="#pravesh-kothari">Pravesh Kothari</a>.</p><p class="session-desc">The panel follows the keynote in the same auditorium.</p></div>
+</li>
+</ol>
+</section>
+
+<section id="speakers" class="section" aria-labelledby="speakers-title">
+<div class="section-head"><h2 class="section-title" id="speakers-title"><span class="number" aria-hidden="true">02</span>The speakers</h2><p class="note">Five perspectives. One conversation.</p></div>
+<ul class="speaker-list">
+<li id="daniel-litt" class="speaker"><div><span class="role">Keynote + panel</span><h3><a href="https://www.daniellitt.com/">Daniel Litt</a></h3></div><p class="affiliation">University of Toronto</p><a class="website" href="https://www.daniellitt.com/" aria-label="Daniel Litt’s website">Website <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></li>
+<li id="nikhil-srivastava" class="speaker"><div><span class="role">Panel</span><h3><a href="https://math.berkeley.edu/~nikhil/">Nikhil Srivastava</a></h3></div><p class="affiliation">University of California, Berkeley</p><a class="website" href="https://math.berkeley.edu/~nikhil/" aria-label="Nikhil Srivastava’s website">Website <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></li>
+<li id="barna-saha" class="speaker"><div><span class="role">Panel</span><h3><a href="https://barnasaha.net/">Barna Saha</a></h3></div><p class="affiliation">University of California San Diego</p><a class="website" href="https://barnasaha.net/" aria-label="Barna Saha’s website">Website <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></li>
+<li id="dan-spielman" class="speaker"><div><span class="role">Panel</span><h3><a href="https://www.cs.yale.edu/homes/spielman/">Dan Spielman</a></h3></div><p class="affiliation">Yale University</p><a class="website" href="https://www.cs.yale.edu/homes/spielman/" aria-label="Dan Spielman’s website">Website <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></li>
+<li id="pravesh-kothari" class="speaker"><div><span class="role">Panel</span><h3><a href="https://www.cs.princeton.edu/~kothari/">Pravesh Kothari</a></h3></div><p class="affiliation">Princeton University</p><a class="website" href="https://www.cs.princeton.edu/~kothari/" aria-label="Pravesh Kothari’s website">Website <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></li>
+</ul>
+</section>
+
+<section id="venue" class="section venue-section" aria-labelledby="venue-title">
+<div><h2 id="venue-title" class="section-title"><span class="number" aria-hidden="true">03</span>Join us in New York</h2><h3>Eisner &amp; Lubin Auditorium</h3><address>4th floor, Kimmel Center for University Life<br>New York University<br>60 Washington Square South<br>New York, NY</address><p>The joint AI and TCS session takes place at Kimmel after the earlier workshop tracks at Warren Weaver Hall.</p><a class="plain-link" href="https://focs.computer.org/2026/venue/">FOCS venue &amp; travel information <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></div>
+<div class="organizers"><h2 class="section-title">Organizers</h2><h3><a href="https://www.cis.upenn.edu/~aaroth/">Aaron Roth</a></h3><p>University of Pennsylvania</p><h3><a href="https://www.samuelbhopkins.com/">Sam Hopkins</a></h3><p>Massachusetts Institute of Technology</p><p>Part of the 67th IEEE Symposium on Foundations of Computer Science.</p><a class="plain-link" href="https://focs.computer.org/2026/workshop-program/">Full FOCS workshop program <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></div>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><span class="footer-brand">TCS + AI · FOCS 2026</span><div class="footer-links"><span>November 8, 2026 · New York City</span><a href="https://focs.computer.org/2026/">Conference website <svg class="external-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a></div></div></footer>
+</body>
+</html>
